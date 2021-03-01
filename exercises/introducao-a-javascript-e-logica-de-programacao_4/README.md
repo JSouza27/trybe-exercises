@@ -1,0 +1,1 @@
+Neste repositório contém os exercícios do bloco introducao-a-javascript-e-logica-de-programacao, dia 4.
