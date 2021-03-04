@@ -86,6 +86,27 @@
       divLeft.appendChild(imgLeft);
       imgLeft.className = 'small-image';
       imgLeft.src = 'https://picsum.photos/200';
+
+      //inicio do ex 8 - criando lista não ordenada
+      let ulList = document.createElement('ul');
+      divRight.appendChild(ulList);
+      ulList.className = 'lista';
+
+      let numbersList = [];
+      for (let index = 0; index <= 10; index += 1){
+        numbersList.push(index);
+      }
+
+      let getUlList = document.querySelector('.lista');
+
+      for (let index2 = 1; index2 < numbersList.length; index2 += 1){
+        let numbers = numbersList[index2];
+        let numbersItem = document.createElement('li');
+
+        numbersItem.innerHTML = numbers;
+        getUlList.appendChild(numbersItem);
+      }
+      //fim do ex 8
     </script>
   </body>
 </html>
