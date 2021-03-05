@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+      let h1 = document.createElement('h1');
+      document.body.appendChild(h1);
+      h1.innerHTML = 'Exercício 5.2 - JavaScript DOM'; 
+
+      let divContent = document.createElement('div');
+      document.body.appendChild(divContent);
+      divContent.className = 'main-content';
+
+      let divCenter = document.createElement('div');
+      divContent.appendChild(divCenter);
+      divCenter.className = 'center-content';
+
+      let pElement = document.createElement('p');
+      divCenter.appendChild(pElement);
+      pElement.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, vel. Pariatur, omnis laudantium aut autem sint mollitia eum repudiandae cumque aliquam sequi quaerat voluptatibus? Distinctio voluptatem nisi sint enim asperiores?';
+
+      let divLeft = document.createElement('div');
+      divContent.appendChild(divLeft);
+      divLeft.className = 'left-content';
+
+      let divRight = document.createElement('div');
+      divContent.appendChild(divRight);
+      divRight.className = 'right-content';
+
+      let imgLeft = document.createElement('img');
+      divLeft.appendChild(imgLeft);
+      imgLeft.className = 'small-image';
+      imgLeft.src = 'https://picsum.photos/200';
+
+      //inicio do ex 8 - criando lista não ordenada
+      let ulList = document.createElement('ul');
+      divRight.appendChild(ulList);
+      ulList.className = 'lista';
+
+      let numbersList = [];
+      for (let index = 0; index <= 10; index += 1){
+        numbersList.push(index);
+      }
+
+      let getUlList = document.querySelector('.lista');
+
+      for (let index2 = 1; index2 < numbersList.length; index2 += 1){
+        let numbers = numbersList[index2];
+        let numbersItem = document.createElement('li');
+
+        numbersItem.innerHTML = numbers;
+        getUlList.appendChild(numbersItem);
+      }
+      //fim do ex 8
+
+      for (let index4 = 1; index4 <= 3; index4 += 1){
+        let h3 = document.createElement('h3');
+
+        divContent.appendChild(h3);
+      }
+    </script>
+  </body>
+</html>
