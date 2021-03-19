@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eeeeee;
+  color: #333333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.content{
+  width: 50%;
+  background-color: #f9f9f9;
+  padding: 40px 30px;
+  margin: 40px 0;
+  border: 1px solid #ddd9d9;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+fieldset {
+  padding: 15px 20px;
+  margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+legend {
+  padding: 0 10px;
+}
+
+input[type='text'] {
+  padding: 2px;
+}
+
+.full-name {
+  display: block;
+}
+
+#nome {
+  padding: 2px;
+  width: 90%;
+}
+
+.dados-complementares {
+  padding-top: 15px;
+}
+
+.section-email, .section-cpf{
+  display: inline-block;
+}
+
+.section-email input{
+  width: 270px;
+  margin-left: 2px;
+}
+
+.section-cpf {
+  float:right;
+  margin-right: 10px;
+}
+
+.logradouro {
+  padding-top: 15px;
+}
+
+.sertion-endereco {
+  display: block;
+}
+
+#endereco {
+  width: 86%;
+}
+
+.section-localidade {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.tipo-moradia {
+  text-align: center;
+}
+
+.resumo {
+  padding-bottom: 15px;
+}
+
+.resumo input{
+  display: block;
+  width: 100%;
+  height: 150px;
+  padding-bottom: 15px;
+}
+
+.cargo {
+  padding-bottom: 15px;
+}
+
+#descricao-cargo{
+  display: block;
+  width: 100%;
+  height: 150px;
+}
+
+.btn {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+}

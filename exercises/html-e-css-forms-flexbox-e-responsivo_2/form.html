@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/bulma-0.9.1/bulma/css/bulma.min.css">
+  <link rel="stylesheet" href="/style.css">
+  <title>Formulário</title>
+</head>
+<body>
+  <section class="hero">
+    <form class="hero-body center-form" action="" method="get">
+      <p class="title">Formulário de Inscrição</p>
+      <div class="field">
+        <label class="label" for="nome">Nome</label>
+        <div class="control">
+          <input class="input is-small" type="text" name="nome" id="nome" maxlength="40" required>
+        </div>
+      </div>
+    
+      <div class="field">
+        <label class="label" for="email">Email</label>
+        <div class="control">
+          <input class="input is-small" type="text" name="email" maxlength="50" id="email" required>
+        </div>
+      </div>
+    
+      <div class="field">
+        <label class="label" for="cpf">CPF</label>
+        <div class="control">
+          <input class="input is-small" type="text" name="cpf" id="cpf" required>
+        </div>
+      </div>
+    
+      <div class="field">
+        <label class="label" for="endereco">Endereço</label>
+        <div class="control">
+          <input class="input is-small" type="text" name="endereco" maxlength="200" id="endereco" required>
+        </div>
+      </div>
+    
+      <div class="field">
+        <label class="label" class="label" for="cidade">Cidade</label>
+        <div class="control">
+          <input class="input is-small" type="text" name="cidade" id="cidade" maxlength="28" required>
+        </div>
+      </div>
+    
+      <div class="field">
+        <label class="label" for="estado">Estado</label>
+        <div class="select is-small">
+          <select name="estado" id="estado" required></select>
+        </div>
+      </div>
+    
+      <div class="field">
+        <label class="label" for="tipo">Tipo</label>
+        <div class="control">
+          <input type="radio" name="tipo" id="casa" checked>
+          <label class="radio" for="casa">Casa</label>
+          
+          <input type="radio" name="tipo" id="apartamento">
+          <label class="radio" for="apartamento">Apartamento</label>
+        </div>
+      </div>
+    
+      <div class="field">
+        <label class="label" for="curriculo">Resumo do currículo</label>
+        <div class="control">
+          <textarea class="textarea has-fixed-size" name="curriculo" id="curriculo" cols="30" rows="10" maxlength="1000" required>Fale um pouco da sua trajetória profissional</textarea>
+        </div>
+      </div>
+    
+      <div class="field">
+        <label class="label" for="cargo">Cargo</label>
+        <div class="control">
+          <input class="input is-small" type="text" name="cargo" id="cargo" maxlength="40" required>
+        </div>
+      </div>
+    
+      <div class="field">
+        <label class="label" for="descricao-cargo">Descrição do cargo</label>
+        <div class="control">
+          <input class="input is-small" type="text" name="descricao-cargo" id="descricao-cargo" maxlength="500" required>
+        </div>
+      </div>
+    
+      <div class="field">
+        <label class="label" for="data-inicio">Data de início</label>
+        <div class="control">
+          <input class="input is-small" type="text" name="data-inicio" id="data-inicio" required>
+        </div>
+      </div>
+    
+      <div class="field">
+        <div class="control div-center">
+          <button class="button is-info is-hovered" type="submit">Enviar</button>
+          <button class="button is-danger is-hovered" type="reset">Limpar</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <script src="/script.js"></script>
+</body>
+</html>

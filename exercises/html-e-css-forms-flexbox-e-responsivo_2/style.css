@@ -1,0 +1,22 @@
+body {
+  background-color: #f3f3f3;
+}
+
+.center-form {
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #ffffff;
+  border: 1px solid #ddd9d9;
+  box-shadow: ;
+}
+
+.center-form p {
+  text-align: center;
+}
+
+.div-center {
+  padding-top: 15px;
+  margin-left: 300px;
+}

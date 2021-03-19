@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/bulma-0.9.1/bulma/css/bulma.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="section">
+    <form action="" method="GET" class="form">
+      <fieldset>
+        <legend class="label" >Dados Pessoais</legend>
+  
+        <div class="control">
+          <label class="label" for="nome">Nome</label>
+          <input class="input" type=" text" name="nome" maxlength="40" required id="nome">
+        </div>
+        
+        <div class="control">
+          <label class="label" for="email">Email</label>
+          <input class="input" type="text" name="email" maxlength="50" required id="email">
+        </div>
+
+        <div class="control">
+          <label class="label" for="cpf">CPF</label>
+          <input class="input" type="text" name="cpf" maxlength="11" required id="cpf">
+        </div>
+          
+        <div class="control">
+          <label class="label" for="endereco">Endereço</label>
+          <input class="input" type="text" name="endereco" maxlength="200" required id="endereco">
+        </div>
+
+        <div class="control">
+          <label class="label" for="cidade">Cidade</label>
+          <input class="input" type="text" name="cidade" maxlength="28" required id="cidade">
+    
+          <label class="label" for="estado">Estado</label>
+          <select class="select" name="estado" id="estado" required>
+            <option value=""></option>
+          </select>
+        </div>
+               
+        <div class="control">
+          <label class="label" for="">Tipo</label>
+  
+          <input class="radio" type="radio" name="moradia" id="casa" checked>
+          <label for="casa">Casa</label>
+          
+          <input type="radio" name="moradia" id="apartamento">
+          <label for="apartamento">Apartamento</label>
+        </div>
+      </fieldset>
+  
+      <fieldset>
+        <legend class="label" >Fale sobre seu último emprego</legend>
+  
+        <div class="control">
+          <label class="label" for="resumo-curriculo">Resumo do currículo</label>
+          <input class="textarea is-medium" type="textArea" name="curriculo" maxlength="1000" cols="10" rows="30" required id="resumo-curriculo">
+        </div>
+
+        <div class="control">
+          <label class="label" for="cargo">Cargo</label>
+          <input class="input" type="text" name="cargo" id="cargo" required maxlength="40">
+        </div>
+
+        <div class="control">
+          <label class="label" for="data-de-inicio">Data de início</label>
+          <input class="input" type="text" name="dataInicio" id="data-de-inicio" required>
+        </div>
+  
+        <div class="control">
+          <label class="label" for="descricao-cargo">Descrição do cargo:</label>
+          <input class="textarea is-large" type="textArea" name="descricao-cargo" maxlength="500" required id="descricao-cargo"> 
+        </div>
+  
+      <div class="control">
+        <button class="button is-primary" type="submit">Enviar</button>
+        <button class="button is-danger is-hovered" type="reset">Limpar</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
