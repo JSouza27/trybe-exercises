@@ -41,9 +41,36 @@ const customerInfo = (order) => {
 
 customerInfo(order);
 
+const order2 = {
+  name: 'Luiz Silva',
+  order: {
+    pizza: {
+      muzzarella: {
+        amount: 1,
+        price: 20,
+      },
+      calabresa: {
+        amount: 1,
+        price: 20,
+      }
+    },
+    drinks: {
+      coke: {
+        type: 'Coca-Cola Zero',
+        price: 10,
+        amount: 1,
+      }
+    },
+  },
+  payment: {
+    total: 50,
+  },
+};
+const clone = Object.assign(order, order2);
+
 const orderModifier = (order) => {
   // Adicione abaixo as informações necessárias.
-
+  console.log(`Olá ${order.name}, o total do seu pedido de ${Object.keys(order.order.pizza)} e ${order.order.drinks.coke.type} é ${order.payment.total}.`);
 }
 
 orderModifier(order);
