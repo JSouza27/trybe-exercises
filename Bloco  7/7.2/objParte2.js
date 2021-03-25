@@ -61,3 +61,10 @@ const totalEstudantes = () => {
 }
 
 totalEstudantes();
+
+// função para obter o valor da chave desejada em um objeto
+const getValues = (obj, key) => {
+  console.log(Object.values(obj)[key])
+}
+
+getValues(lesson1, 0);
