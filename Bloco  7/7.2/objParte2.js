@@ -40,3 +40,10 @@ function sizeObj(obj) {
 }
 
 sizeObj(lesson1);
+
+// função para listar valores de um objeto
+const listValues = (obj) => {
+  console.log(Object.values(obj))
+};
+
+listValues(lesson2);
