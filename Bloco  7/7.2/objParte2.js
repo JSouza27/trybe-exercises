@@ -52,3 +52,12 @@ listValues(lesson2);
 const allLessons = Object.assign({}, {lesson1}, {lesson2}, {lesson3});
 
 console.log(allLessons);
+
+// retorna o total de estudantes nas aulas
+const totalEstudantes = () => {
+  let soma = allLessons.lesson1.numeroEstudantes + allLessons.lesson2.numeroEstudantes + allLessons.lesson3.numeroEstudantes;
+
+  console.log(soma);
+}
+
+totalEstudantes();
