@@ -27,7 +27,7 @@ addTurno(lesson2, 'turno', 'manhã');
 console.log(lesson2);
 
 // função para listar as 'keys' de um objeto
-const listKey = (obj) => {
+function listKey(obj) {
   console.log(Object.keys(obj));
 }
 
@@ -44,6 +44,11 @@ sizeObj(lesson1);
 // função para listar valores de um objeto
 const listValues = (obj) => {
   console.log(Object.values(obj))
-};
+}
 
 listValues(lesson2);
+
+// agrupa todas as lesson em um objeto
+const allLessons = Object.assign({}, {lesson1}, {lesson2}, {lesson3});
+
+console.log(allLessons);
