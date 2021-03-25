@@ -18,9 +18,17 @@ const lesson3 = {
   turno: 'noite',
 };
 
+// função para adicionar a chave 'turno' com valor 'manhã' na lesson2
 const addTurno = (obj, newKey, value) => {
   obj[newKey] = value;
 }
 
 addTurno(lesson2, 'turno', 'manhã');
 console.log(lesson2);
+
+// função para listar as 'keys' de um objeto
+const listKey = (obj) => {
+  console.log(Object.keys(obj));
+}
+
+listKey(lesson3);
