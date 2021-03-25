@@ -71,8 +71,17 @@ getValues(lesson1, 0);
 
 // verifica se existe o par (chave / valor) no objeto
 const checkValueKey = (obj, nameKey, valueKey) => {
-  console.log(obj[nameKey].includes(valueKey));
+  const arrLesson = Object.entries(obj);
+  let condition = 'false';
+  for(let index = 0; index < arrLesson.length; index +=1) {
+   if (arrLesson[index][0] === nameKey && arrLesson[index][1] === valueKey) {
+     condition = 'true';
+   }
+  }
+  console.log(condition);
 }
 
-checkValueKey(lesson3, 'materia', 'Maria Clara');
 checkValueKey(lesson3, 'turno', 'noite');
+checkValueKey(lesson3, 'materia', 'Maria Clara');
+// bônus
+
