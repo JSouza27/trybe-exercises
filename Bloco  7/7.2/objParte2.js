@@ -32,3 +32,11 @@ const listKey = (obj) => {
 }
 
 listKey(lesson3);
+
+// função que mostra o tamanho do objeto
+function sizeObj(obj) {
+  const arrLesson = Object.entries(obj);
+  console.log(arrLesson.length);
+}
+
+sizeObj(lesson1);
