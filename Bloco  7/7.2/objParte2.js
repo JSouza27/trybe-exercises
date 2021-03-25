@@ -68,3 +68,11 @@ const getValues = (obj, key) => {
 }
 
 getValues(lesson1, 0);
+
+// verifica se existe o par (chave / valor) no objeto
+const checkValueKey = (obj, nameKey, valueKey) => {
+  console.log(obj[nameKey].includes(valueKey));
+}
+
+checkValueKey(lesson3, 'materia', 'Maria Clara');
+checkValueKey(lesson3, 'turno', 'noite');
