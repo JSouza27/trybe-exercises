@@ -9,8 +9,10 @@ const greetPeople = (people) => {
   return greeting;
 };
 
-// assert.strictEqual(typeof greetPeople, 'function');
+assert.strictEqual(typeof greetPeople, 'function');
 
 const parameter = ['Irina', 'Ashleigh', 'Elsa'];
 const result = ['Hello Irina', 'Hello Ashleigh', 'Hello Elsa'];
-greetPeople(parameter);
+
+assert.deepStrictEqual(greetPeople(parameter), result);
+
