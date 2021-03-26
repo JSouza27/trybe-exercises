@@ -84,4 +84,39 @@ const checkValueKey = (obj, nameKey, valueKey) => {
 checkValueKey(lesson3, 'turno', 'noite');
 checkValueKey(lesson3, 'materia', 'Maria Clara');
 // bônus
+const sum = (obj, value) => {
+  const arrObj = Object.values(obj);
+  const reducer = (accumulator, currentValue) => accumulator + currentValue;
+  let arr = [];
+  arrObj.forEach((item) => {
+    if(item.materia === value) {
+        arr.push(item.numeroEstudantes);
+    }
+});
+  console.log(arr.reduce(reducer));
+}
 
+sum(allLessons, 'Matemática');
+
+// questão abaixo concluída com a ajuda do gabarito
+const createReport = (obj, nomeProf) => {
+  let report = {};
+  let lessons = [];
+  let totalEstudantes = 0;
+  const objValues = Object.values(obj);
+  for (index in objValues) {
+    if (objValues[index].professor === nomeProf) {
+      lessons.push(objValues[index].materia)
+      totalEstudantes += objValues[index].numeroEstudantes;
+    }
+  }
+  report = {
+    professor: nomeProf,
+    aulas: lessons,
+    estudandantes: totalEstudantes,
+  }
+  
+  console.log(report);
+}
+
+createReport(allLessons, 'Maria Clara');
