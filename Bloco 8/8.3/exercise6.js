@@ -75,4 +75,4 @@ function oldBooks() {
   return newArray;
 }
 
-assert.deepStrictEqual(oldBooks(), expectedResult);
+assert.deepStrictEqual(oldBooks(), expectedResult); 
